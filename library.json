@@ -1,0 +1,51 @@
+{
+	"name": "USBSerialLogger",
+	"version": "0.5.0",
+	"description": "Logs all message to USB serial interface using USB/HW CDC",
+	"keywords": "Fabrica-IO, log receiver, serial",
+	"repository":
+	{
+	  "type": "git",
+	  "url": "https://github.com/FabricaIO/logreceiver-USBCDCLogger.git"
+	},
+	"authors":
+	[
+	  {
+		"name": "Sam Groveman",
+		"email": "SamGroveman@outlook.com",
+		"url": "https://github.com/FabricaIO"
+	  }
+	],
+	"dependencies": {
+		
+	  },
+	"license": "GPLv3",
+	"homepage": "https://github.com/FabricaIO",
+	"frameworks": "arduino",
+	"platforms": "*",
+	"fabrica-io" : {
+		"name": "USBCDCLogger",
+		"type": 2,
+		"category": "Log",
+		"libname": "USBCDCLogger",
+		"includes": ["USBCDCLogger"],
+		"description": "Logs all message to USBCDC serial interface",
+		"constructor":
+		[
+			[
+				{
+					"name": "USBCDC",
+					"type": "USBCDC*",
+					"description": "The serial interface to use",
+					"default": "&Serial"
+				},
+				{
+					"name": "Baud",
+					"type": "int",
+					"description": "The baud rate to use",
+					"default": "115200"
+				}
+			]
+		]
+	}
+  }
