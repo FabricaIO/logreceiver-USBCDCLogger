@@ -1,2 +1,2 @@
 # logreceiver-USBCDCLogger
- Seial logger for USBCDC devices
+ Serial logger for USBCDC devices
