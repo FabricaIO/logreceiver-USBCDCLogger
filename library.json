@@ -24,7 +24,7 @@
 	"frameworks": "arduino",
 	"platforms": "*",
 	"fabrica-io" : {
-		"name": "USBCDCLogger",
+		"name": "USBLogger",
 		"type": 2,
 		"category": "Log",
 		"libname": "USBCDCLogger",

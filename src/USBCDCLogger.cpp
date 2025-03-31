@@ -35,9 +35,9 @@ bool USBCDCLogger::begin() {
 /// @return True on success
 bool USBCDCLogger::receiveMessage(char message) {
 	if (use_usb) {
-		usb_serial->print(baud);
+		usb_serial->print(message);
 	} else {
-		hw_serial->print(baud);
+		hw_serial->print(message);
 	}
 	return true;
 }
@@ -47,9 +47,9 @@ bool USBCDCLogger::receiveMessage(char message) {
 /// @return True on success
 bool USBCDCLogger::receiveMessage(String message) {
 	if (use_usb) {
-		usb_serial->print(baud);
+		usb_serial->print(message);
 	} else {
-		hw_serial->print(baud);
+		hw_serial->print(message);
 	}
 	return true;
 }
